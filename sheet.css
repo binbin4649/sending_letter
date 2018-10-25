@@ -1,21 +1,12 @@
-/* 印刷時の用紙設定 */
-@page {
-  size: A4; /* 用紙サイズ */
-  margin: 0; /* ヘッダー・フッダーを無効化 */
-}
-
 /* 要素の初期化 */
 * {
   margin: 0;
   padding: 0;
   /* デフォルトのフォント */
   color: #191970;
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
-    sans-serif;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
   font-size: 11pt;
   font-weight: normal;
-  /* 背景色・背景画像を印刷する（Chromeのみで有効） */
-  -webkit-print-color-adjust: exact;
 }
 
 /* ページレイアウト (section.sheet を１ページとする) */
@@ -24,27 +15,14 @@
   position: relative;
   box-sizing: border-box;
   page-break-after: always;
-
-  /* 用紙サイズ A4 */
+  margin: auto;
+ /* 用紙サイズ A4 */
   height: 297mm;
   width: 210mm;
-
   /* 余白サイズ */
-  padding-top: 45mm;
-  padding-left: 27mm;
-  padding-right: 27mm;
-}
-
-/* プレビュー用のスタイル */
-@media screen {
-  body {
-    background: #e0e0e0;
-  }
-  .sheet {
-    background: white; /* 背景を白く */
-    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
-    margin: 5mm auto;
-  }
+  padding-top: 50mm;
+  padding-left: 10mm;
+  padding-right: 10mm;
 }
 
 /* 汎用クラス */
@@ -64,19 +42,19 @@
 
 /* row */
 div.row1 {
-	height: 20mm;
+	height: 35mm;
 }
 div.row2 {
-	height: 10mm;
+	height: 20mm;
 }
 div.row3 {
-	height: 25mm;
+	height: 30mm;
 }
 div.row4 {
-	height: 40mm;
+	height: 50mm;
 }
 div.row5 {
-	height: 50mm;
+	height: 60mm;
 }
 div.row6 {
 	height: 15mm;
@@ -97,6 +75,7 @@ h1 {
   font-size: 25px;
   font-weight: normal;
   letter-spacing: 5px;
+  text-decoration: underline;
 }
 
 h2 {
@@ -111,7 +90,7 @@ div.dear p{
 }
 
 div.myself {
-	padding-left: 105mm
+	padding-left: 138mm
 }
 
 p.ki {
